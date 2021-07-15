@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+      <title>Tabellen</title> 
+      <style type="text/css">
+      body {
+        background-color: white;
+        font-family: Arial, sans-serif;
+        color black;
+      }
+      table, tr, td {
+      height: auto;
+      width: auto;
+      padding: 3;
+      margin-left: auto;
+      margin-right: auto
+      }
+      
+      #bild {text-align: center;}
+      #thema {
+      text-align: left;
+      font-weight: bold;
+      }
+      #thema span {
+      font-style: italic;
+      }
+      #title {
+      text-align: center;
+      text-decoration: underline;
+      font-size: 20px;
+      
+      }
+      #hypertext {
+      text-align: left;  
+      }
+      #pfeil-links {text-align: center;}
+      #pfeil-rechts {text-align: center;}
+      #copy {text-align: center;}
+      .pfeil {
+	    text-decoration:none;
+      background-color:#ededed; 
+      text-align: center;
+      }.pfeil:hover {
+	     background-color:#dfdfdf;
+      }
+      </style>
+  </head>
+  <body>
+     <table>     
+     
+      <tr>
+        <td id="bild">     
+           <img src="Mikrocomputertechnik.jpg" alt="Mikrocomputertechnik.jpg, 19kB" title="Mikrocomputertechnik" height="100px" width="auto">
+        </td>
+        <td>
+        &nbsp;
+        </td>
+        <td id="thema">
+        Grundlagen Mikrocomputertechnik
+        <br><br>
+        <span>Max Mustermann</span>
+        </td>
+      </tr>
+      
+      <tr>   
+        <th id="title" colspan="3">
+        Bestandteile eines Mikrocomputers
+        </th>
+      </tr> 
+        
+      <tr id="hypertext">     
+        <td>
+        &nbsp;
+        </td>
+        <td>
+        <ul style="list-style-type: disc;">
+          <li><a href="#">Mikrocomputer</a></li>
+          <li><a href="#">CPU</a></li>         
+          <li><a href="#">Speicher</a></li>
+          <li><a href="#">Ein-/Ausgabeeinheit</a></li>
+        </ul>
+        </td>
+        <td>
+        &nbsp;
+        </td>
+      </tr>
+      
+      <tr>  
+        <td class="pfeil" id="pfeil-links">
+        &#171;
+        </td>
+        <td>
+        &nbsp;
+        </td>
+        <td class="pfeil" id="pfeil-rechts">
+        &#187;
+        </td>
+      </tr>
+      
+      <tr>
+        <th id="copy" colspan="3">
+        Copyright &copy; Max Mustermann ++ E-Mail >> example@example.de ++ Letzte Aktualisierung >> 10.11.2020 
+        </th>
+      </tr>
+     </table>
+  </body>
+</html>                                                                                                                                                              

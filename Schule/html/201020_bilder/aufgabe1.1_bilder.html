@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+      <title>Darstellen von Bildern mit HTML</title> 
+      <style>
+         body {
+          font-family: Arial, sans-serif;
+         }
+         h1 {
+          text-decoration: underline;
+          text-align: center;
+          border: 5px solid black;
+          background-position: 85% 50%;
+          background-size: 50px;
+          background-repeat: no-repeat;
+          background-image: url(katzenbild.jpg);
+          margin-left:5px; 
+          padding-top: 5px; 
+          padding-bottom: 5px;
+         }
+         ul {
+          color: blue;
+          text-decoration: underline;
+          }
+		  h2 {
+          color: blue;
+          text-decoration: underline;
+          text-align: center;
+		  }
+          hr {
+          border: 2px solid black; 
+          width: 80%;
+          }         
+         div > p {
+          color: black;
+         }
+                                                                                                                                                        
+      </style>
+  </head>
+  <body>
+    <h1>Einf&uuml;gen von Bildern</h1>
+    
+    <ul>
+      <li>Ver&auml;ndern der Bildgr��e</li>
+      <li>Bild horizental zentriert mit Rand</li>
+      <li>Bild auf der linken Seite</li>
+      <li>Bild auf der rechten Seite</li>
+      <li>Verschiedene Bildausrichtungen zum Text</li>
+      <li>Bild links mit Textumfluss rechts</li>
+      <li>Bild rechts mit Textumfluss links</li>
+      <li>Bild mit Textumfluss rechts bis zur H�lfte</li>
+    </ul>
+    
+    <hr>
+    <h2>Ver�nderung der Bildgr��e</h2>
+      <img src="katzenbild.jpg" alt="null" style="height: 100px; width:100px">     
+      <img src="katzenbild.jpg" alt="null" style="height: 50px; width:50px">
+      <img src="katzenbild.jpg" alt="null" style="height: 10px; width:10px">
+    <hr>
+    <h2>Bild horizental zentriert mit Rand</h2> 
+      <p style="text-align: center;"><img src="katzenbild.jpg" alt="null" style="border: 4px solid red; vertical-align: middle; height: 100px; width:100px;"></p>
+    <hr>
+    <h2>Bild auf der linken Seite</h2>  
+      <p style="text-align: left;"><img src="katzenbild.jpg" alt="null" style="height: 100px; width:100px"></p>
+    <hr>
+    <h2>Bild auf der rechten Seite</h2>  
+      <p style="text-align: right;"><img src="katzenbild.jpg" alt="null" style="height: 100px; width:100px"></p>
+    <hr>
+    <h2>Verschiedene Bildausrichtungen zum Text</h2> 
+	<p style="text-align: center;">Lorem ipsum dolor sit amet, consetetur sadipscing <img src="katzenbild.jpg" alt="null" style="vertical-align: top; height: 100px; width:100px"> elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+	<p style="text-align: center;">>Lorem ipsum dolor sit amet, consetetur sadipscing
+       <img src="katzenbild.jpg" alt="null" style="vertical-align: middle; height: 100px; width:100px"> elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+	<p style="text-align: center;">Lorem ipsum dolor sit amet, consetetur sadipscing <img src="katzenbild.jpg" alt="null" style="vertical-align: bottom; height: 100px; width:100px"> elitr, sed diam nonumy eirmod tempor invidunt ut.</p>
+	  
+    <hr>
+    <h2>Bild links mit Textumfluss rechts</h2>   
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem <img src="katzenbild.jpg" alt="null" style="height: 100px; width:100px; float:left;">ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <h2>Bild rechts mit Textumfluss links</h2>    
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem <img src="katzenbild.jpg" alt="null" style="height: 100px; width:100px; float:right;">ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <hr>
+    <h2>Bild mit Textumfluss rechts bis zur H�lfte</h2>
+      <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem <img src="katzenbild.jpg" alt="null" style="height: 100px; width:100px; float:left;">ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo <br style="clear: all;"><br style="clear: all;"><br style="clear: all;"><br style="clear: all;"> duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+         
+     <br>    
+    <p style="text-align: center;">Copyright &copy; Max Mustermann <br> E-Mail >> example@example.de</p>  
+    <p style="text-align: center;">Letzte Aktualisierung >> 15.11.2020</p>
+  </body>
+</html>

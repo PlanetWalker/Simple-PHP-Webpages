@@ -1,0 +1,48 @@
+
+CREATE DATABASE IF NOT EXISTS `kurse`;
+use `kurse`;
+
+CREATE TABLE IF NOT EXISTS `raum` (
+	raum_id INT AUTO_INCREMENT PRIMARY KEY,
+    raum_vaule VARCHAR(50)
+    );
+
+CREATE TABLE IF NOT EXISTS `thema` (
+	thema_id INT AUTO_INCREMENT PRIMARY KEY,
+    thema_vaule VARCHAR(255)
+    );
+
+CREATE TABLE IF NOT EXISTS `preise` (
+	preis_id INT AUTO_INCREMENT PRIMARY KEY,
+    preis_vaule DOUBLE(255,2)
+    );
+
+CREATE TABLE IF NOT EXISTS `kursleiter` (
+	kursleiter_id INT AUTO_INCREMENT PRIMARY KEY,
+    kursleiter_vorname VARCHAR(255),
+    kursleiter_nachname VARCHAR(255),
+    kursleiter_honorar DOUBLE(255,2)
+    );
+
+CREATE TABLE IF NOT EXISTS `kurse` (
+	kurs_id INT AUTO_INCREMENT PRIMARY KEY,
+    thema_id INT, FOREIGN KEY (thema_id) REFERENCES thema(thema_id),
+    kursleiter_id INT, FOREIGN KEY (kursleiter_id) REFERENCES kursleiter(kursleiter_id),
+    preis_id INT, FOREIGN KEY (preis_id) REFERENCES preise(preis_id),
+    kurs_start DATE,
+    kurs_end DATE,
+    kurs_max INT,
+    kurs_time TIME,
+    raum_id INT, FOREIGN KEY (raum_id) REFERENCES raum(raum_id)
+    );
+
+CREATE TABLE IF NOT EXISTS `anmeldung` (
+	user_id INT AUTO_INCREMENT PRIMARY KEY,
+    user_vorname VARCHAR(255),
+    user_nachname VARCHAR(255),
+    user_strasse VARCHAR(255),
+    user_plz INT,
+    user_ort VARCHAR(30),
+    user_beitritt VARCHAR(10),
+    kurs_id INT, FOREIGN KEY (kurs_id) REFERENCES kurse(kurs_id)
+    );

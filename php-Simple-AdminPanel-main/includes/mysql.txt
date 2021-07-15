@@ -1,0 +1,16 @@
+
+CREATE DATABASE IF NOT EXISTS `logger`;
+use `logger`;
+
+CREATE TABLE IF NOT EXISTS `liste` (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+    date VARCHAR(255),
+    country VARCHAR(255),
+    ip VARCHAR(255),
+    vist_page VARCHAR(255),
+    user_os VARCHAR(255),
+    user_browser VARCHAR(255),
+    site VARCHAR(255),
+    user_agent VARCHAR(255),
+    comment VARCHAR(255)
+    );
