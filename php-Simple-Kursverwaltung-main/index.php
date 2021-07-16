@@ -12,7 +12,7 @@
     <body>
         <table> 
             <tr>
-                <td><a href="thema_erfassen.php"><button>1. Thema erfassen</button></td>
+                <td><a href="thema_erfassen.php"><button>1. Thema erfassen</button></a></td>
             </tr> 
             <tr>
                 <td><a href="kurs_preise_erfassen.php"><button>2. Kurspreise erfassen</button></a></td>
