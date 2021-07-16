@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE html>
 <html>
     <head>
-        <title></></title>
+        <title>(/)</title>
 
         <meta charset="UTF-8"/>
         
@@ -21,10 +21,10 @@
                 <td><a href="raum_erfassen.php"><button>3. Raum erfassen</button></a></td>
             </tr>   
             <tr>
-                <td><a href="krusleiter_erfassen.php"><button>4. Kursleiter erfassen</button></td>
+                <td><a href="krusleiter_erfassen.php"><button>4. Kursleiter erfassen</button></a></td>
             </tr>
             <tr>
-                <td><a href="kurse_erfassen.php"><button>5. Kurse erfassen</button></td>
+                <td><a href="kurse_erfassen.php"><button>5. Kurse erfassen</button></a></td>
             </tr>
             <tr>
                 <td>&nbsp;</td>
