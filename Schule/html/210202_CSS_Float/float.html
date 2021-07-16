@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>CSS_Pseudoformate</title>
+        <style type="text/css">
+         body { 
+         font-family:Arial,sans-serif; 
+         font-size:12pt; 
+         background-image: url(bg_blue_h.jpg);
+         background-repeat: repeat-y;
+          }
+         a {text-decoration:none;   }
+         a:link { color: black;  }
+         a:visited { color: black;}
+         a:hover { color: white; }
+         a:active { color: yellow;}
+         
+         #navi {
+         float:left;
+         margin: 20px 20px 20px 20px;
+         padding: 20px 20px 20px 20px;
+         border: 2px solid #6B6B6B; 
+         height: 340px;
+         width: 120px;
+         }
+         
+         li {
+         list-style:  none;
+         height: 30px;
+         }
+         
+        hr {
+         font-weight: bold;
+         color: black;
+        }
+         
+         #content-box {
+         float:left;
+         height: 340px;
+         width: 880px;
+         background-image: url(bg_mg.jpg);
+         background-repeat:repeat-x;
+         margin: 20px 20px 20px 20px;
+         padding: 10px 40px 40px 40px;
+         border: 2px dashed #6B6B6B;
+         }
+            #content-box {
+                text-align: center;
+                text-decoration: underline;
+            } 
+         
+         #info-box {
+         float:right;
+         height: 340px;
+         background-color: #FFCC99;
+         margin: 20px 20px 20px 20px;
+         padding: 10px 40px 40px 40px;
+         border: 2px solid #6B6B6B;
+         }
+            #info-box h2 {
+                text-align: center;
+                text-decoration: underline;
+            } 
+         
+        #header {
+         margin: 20px 20px 20px 20px;
+         padding: 40px 40px 40px 40px;
+         border: 2px solid #6B6B6B;
+         background-color: #FFFF99;
+                    background-image:url(micro2.gif);
+                    background-repeat: no-repeat;
+                    background-position: 20;
+                    border: 1px solid black;
+                    background-position: 95% 5%;
+         }
+         
+         #header h1 {
+         text-align: center;
+                    font-size: 48px;
+                    margin: 10px 10px 10px 10px;
+                    padding: 40px 40px 20px 40px;
+                    color: blue;
+         }
+         
+         #footer {
+         margin: 10px 10px 10px 10px;
+         padding: 20px 20px 20px 40px;
+         border: 2px solid #6B6B6B;
+         background-color: #FFFF99;
+                    background-image: url(css.gif);
+                    background-repeat: no-repeat;
+                    background-position: 50% 90%;
+        } 
+        
+        #footer p {
+         text-align: center;
+         font-weight: bold;
+         }
+        .clear {
+        clear:both;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="header">
+            <h1>
+            Header-Box
+            </h1>
+        </div>
+        
+        <ul id="navi">
+         <li><a href="#">Home</a></li>
+         <li><a href="#/mc">Mikrocomputer</a></li>
+         <li><a href="#/mp">Mikroprozessor</a></li>
+         <li><a href="#/s">Speicher</a></li>
+         <li><a href="#/ea">Ein-/Ausgabe</a></li>
+         <li><hr noshade></li>
+         <li><a href="#">Kontakt</a></li>
+         <li><a href="#/#impressum">Impressum</a></li>
+        </ul>
+        
+        <div id="content-box">
+        <h2>
+            Content-Box
+        </h2>
+        </div>
+        
+        <div id="info-box">
+        <h2>
+            Info-Box
+        </h2>
+        </div>
+        
+        <br class="clear">
+        
+        <div id="footer">
+        <p>
+            Footer-Box
+        </p>
+        </div>
+    </body>
+</html>
