@@ -24,7 +24,7 @@
                                 $sql = "SELECT * FROM `kurse` WHERE `kurs_id`;";
                                 $result = @mysqli_query($conn, $sql);
                                 while($rows = mysqli_fetch_array($result)) {
-                                    if(isset($_POST['kurs']) && $rows[0] == $_POST['kurs']) {
+                                    if(isset($_POST['kursid']) && $rows[0] == $_POST['kursid']) {
                                     echo "<option value=".$rows[0]." selected >".$rows[0]."</option>";
                                     } else
                                     echo "<option value=".$rows[0].">".$rows[0]."</option>";
@@ -43,7 +43,7 @@
             if(isset($_POST['submit'])) {
         ?>
 
-        <br />
+        <br />     
         <table>
             <tr>
                 <th>Kurs-Nr</th>
@@ -55,7 +55,7 @@
         <?php
                 $kursid = $_POST['kursid'];
                 $sql = "
-                    SELECT * FROM `anmeldung` WHERE `user_id` = $kursid;
+                    SELECT * FROM `anmeldung` WHERE `kurs_id` = $kursid;
                 ";
                 $result = mysqli_query($conn, $sql);
 
