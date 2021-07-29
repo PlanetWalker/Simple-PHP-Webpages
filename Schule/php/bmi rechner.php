@@ -61,12 +61,12 @@
         <form action="" method="GET">
             <table>
                 <tr>
-                    <?php echo (isset($_GET['hight'])) ? '<td><p style="color:red">Fehler</p></td>' : '' ; ?>
+                    <?php if(isset($_GET['hight']) && (!($_GET['hight'] <= 0))) {echo '<td><p style="color:red">Fehler</p></td>';} ?>
                     <td>K&ouml;rpergr&ouml;&szlig;e in cm:</td>
                     <td><input type="text" name="hight" placeholder="160" value="<?php echo (isset($_GET['hight'])) ? $_GET['hight'] : '' ; ?>"/></td>
                 </tr> 
                 <tr>
-                    <?php echo (isset($_GET['kg'])) ? '<td><p style="color:red">Fehler</p></td>' : '' ; ?>
+                    <?php if(isset($_GET['kg']) && (!($_GET['kg'] <= 0))) {echo '<td><p style="color:red">Fehler</p></td>';} ?>
                     <td>Gewicht in kg:</td>
                     <td><input type="text" name="kg" placeholder="60" value="<?php echo (isset($_GET['kg'])) ? $_GET['kg'] : '' ; ?>"/></td>
                 </tr>
