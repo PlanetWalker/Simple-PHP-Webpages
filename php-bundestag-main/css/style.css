@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap');
+
+html, body {
+font-family: 'Quicksand', sans-serif;
+    margin: 10px;
+    padding: 10px;
+    background: #000000;
+    color: #90C1FF;
+}
+.resize{
+    min-height: 500px;
+    min-width: 180px;
+
+    max-height: 500px;
+    max-width: 180px;
+
+    resize: both;
+    overflow: auto;
+    position: absolute;
+}
+.frage{
+background-color: #17082d;
+}
+div{
+    margin: 10px;
+    padding: 20px;
+}
+td, th, table{
+    margin: 5px;
+    padding: 10px;
+    border: medium solid #BADBF3;
+    border-collapse: collapse;
+}
+
+
+a:link, a:visited {
+  color: #ffffff;
+  text-decoration: underline;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: #FFFFFF;
+}
+
+#true{
+color: green;
+}
+#false{
+color: red;
+}
+
+#wahl{
+color: white;
+}
+a:hover {
+color: #6cd8fe;
+}
