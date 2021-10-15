@@ -66,7 +66,7 @@
             //Define header information
             header('Content-Description: File Transfer');
             header('Content-Type: application/octet-stream');
-            header("Cache-Control: no-cache, must-revalidate");
+            header("Cache-Control: no-cache, must-revalidate, post-check=0, pre-check=0");
             header("Expires: 0");
             header('Content-Disposition: attachment; filename="'.basename($filename).'"');
             header('Content-Length: ' . filesize($filename));
